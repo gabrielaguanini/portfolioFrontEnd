@@ -1,0 +1,42 @@
+<app-encabezadosinanim></app-encabezadosinanim>
+<div class="container-fluid pt-2">
+    <button type="button" class="btn btn-outline-secondary" routerLink="/paginauno">
+        <i class="bi bi-house"></i>
+    </button>
+    <div class="row">
+        <h1 data-aos="flip-left" data-aos-delay="1500" data-aos-duration="2000">Libro de visitas</h1>
+    </div>
+    <div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" (click)="abrirModal()">
+            FIRMAR ➳
+        </button>
+        <div class="" *ngIf="modalLV==true">
+            <app-msjlibvis></app-msjlibvis>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div *ngFor="let Librovisitas of libroVisitasMostrar">
+            <div class="row border border-3 justify-content-center">
+                <div class="col-4 justify-content-center" id="divnombre">
+                    <h2>{{Librovisitas.nombreLV}}</h2>
+                </div>
+                <div class="col-4 justify-content-center" id="divmensaje">
+                    <p>{{Librovisitas.mensajeLV}}</p>
+                </div>
+                <div class="col-4" id="divboto">
+                    <button class="btn btn-outline-secondary" routerLink="/editarlib/{{Librovisitas.id}}">
+                        <i class="bi bi-pencil-square"></i> Editar</button>
+                    <button class="btn btn-outline-danger" (click)="borrarMensaje(Librovisitas.id)">
+                        <i class="bi bi-x-square"></i> Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<app-footersinanim></app-footersinanim>

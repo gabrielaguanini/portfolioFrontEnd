@@ -1,0 +1,69 @@
+<div class="container-fluid" style="
+   background-image: url('./assets/Imagenes/ImagenesdelHeader/surface-rkr_jnaGzIk-unsplash.jpg');
+   background-size: cover; height: 115vh;
+   border-radius: 30%;
+   background-position: center center;
+   border-style:groove;
+   background-repeat: no-repeat;
+   background-color: #FCF3CF;
+   padding-bottom: 15vh;" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+  <div class="col-6 m-0">
+    <div class="waviy">
+      <span class="text-secondary" style="--i:1">⇊</span>
+    </div>
+    <div>
+      <button class="btn btn-outline-secondary" type="button" id="btninvitados" (click)="rellenarFormulario()"
+        type="button">
+        INVITADOS <i class="bi bi-box-arrow-in-right"></i>
+      </button>
+    </div>
+  </div>
+  <div id="parrafobienvenida">
+    <p>Bienvenido a mi Portfolio</p>
+  </div>
+  <div class="col-md-4 col-md-offset-4" id="login">
+    <section id="inner-wrapper" class="login">
+      <article>
+        <form #f="ngForm" [formGroup]="form" (ngSubmit)="onLogin()" novalidate id="formulario">
+          <div class="form-group">
+            <div class="row">
+              <div class="d-flex justify-content-center text-center">
+                <h6 class="fs-2" id="zzz">Iniciar sesión
+                  <small class="text-muted d-flex justify-content-center">para ingresar</small>
+                  <br>
+                </h6>
+              </div>
+              <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+              <input type="email" class="form-control" formControlName="nombreUsuario" placeholder="Usuario"
+                id="nombreUsuario" name="nombreUsuario" (click)="mostrarInput()"
+                [ngClass]="{'is-invalid': NombreUsuario?.errors && NombreUsuario?.touched, 'is-valid':!NombreUsuario?.errors && NombreUsuario?.touched}"
+                [(ngModel)]="nombreUsuario" required>
+              <div *ngIf="NombreUsuario?.errors && NombreUsuario?.touched">
+                <h6 *ngIf="NombreUsuario?.hasError('required')" class="text-danger">
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group, row">
+              <span class="input-group-addon"><i class="fa fa-key"> </i></span>
+              <input type="password" class="form-control" formControlName="password" placeholder="Contraseña"
+                id="password" name="password"
+                [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid':!Password?.errors && Password?.touched}"
+                [(ngModel)]="password" required />
+              <div *ngIf="Password?.errors && Password?.touched">
+                <h6 *ngIf="Password?.hasError('required')" class="text-danger">
+                </h6>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-secondary">Acceder</button>
+          <div class="forgot">
+            <hr>
+            | <a routerLink="/nuevousuario">Querés registrarte?</a>
+          </div>
+        </form>
+      </article>
+    </section>
+  </div>
+</div>

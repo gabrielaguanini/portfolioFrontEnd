@@ -1,0 +1,144 @@
+#loginregistro {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.login {
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotateY(40deg);
+  -moz-transform: rotateY(40deg);
+  transform: rotateY(40deg);
+
+}
+
+.login:hover {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.login .form-group {
+  margin-bottom: 17px;
+}
+
+.login .form-control,
+.login .btn {
+  border-radius: 0;
+}
+
+.login .btn {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.input-group-addon {
+  border-radius: 0;
+  color: #fff;
+  background: #f3aa0c;
+  border: #f3aa0c;
+}
+
+.forgot {
+  font-size: 16px;
+}
+
+.forgot a {
+  color: #333;
+}
+
+.forgot a:hover {
+  color: #B09394;
+}
+
+#inner-wrapper,
+#contact-us .contact-form,
+#contact-us .our-address {
+  color: #1d1d1d;
+  font-size: 19px;
+  line-height: 1.7em;
+  font-weight: 300;
+  padding: 31px;
+  padding-top: 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 100px;
+}
+
+@media handheld,
+only screen and (max-width: 1119px) {
+
+  #inner-wrapper {
+    padding: 38px;
+  }
+}
+
+.input-group-addon {
+  border-radius: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #fff;
+  background: #f3aa0c;
+  border: #f3aa0c;
+  border-right-color: rgb(243, 170, 12);
+  border-right-style: none;
+  border-right-width: medium;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+#formregistro {
+  position: relative;
+  margin-bottom: -5vh;
+  margin-top: -5vh;
+
+
+}
+
+/* FLECHAS ABAJO */
+
+.waviy {
+  position: relative;
+  font-size: 21px;
+
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
+  }
+}

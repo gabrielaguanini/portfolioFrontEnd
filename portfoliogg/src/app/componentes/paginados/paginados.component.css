@@ -1,0 +1,66 @@
+/* 2 pagina PAGINA TRABAJOS DESARROLLADO */
+
+#h1-paginatrabajosdesarrollado {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #323068;
+  font-weight: LIGHTER;
+  font-size: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+#p-paginatrabajosdesarrollado {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  color: #47474A;
+  font-weight: LIGHTER;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+
+/* FLECHAS ABAJO */
+
+.waviy {
+  position: relative;
+
+  font-size: 60px;
+
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* CONTENEDOR TRABAJOS */
+
+#containertrabajos {
+  padding-left: 10vh;
+  padding-right: 10vh;
+}

@@ -1,0 +1,106 @@
+/* GENERAL */
+
+h2{
+        
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#D3830B;    
+    font-weight:bold;
+    padding-top:15px;
+
+}
+
+h1{
+    
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#323068;    
+    font-weight:bold;
+    padding-bottom:50px;
+    
+ 
+}
+
+
+a:link, a:visited, a:active{
+    text-decoration:none;
+}
+
+/* ACERCA DE */
+    
+#imagen-acercade{
+    
+    display: block;
+    margin:auto;
+    border-style: solid;
+    border-color:rgb(229, 182, 182);
+    border-radius: 200px;
+    
+           
+}
+
+
+#parrafo-acercade{
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#47474A;    
+    font-weight:bold;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 60px;
+}
+
+#span-parrafo-acercade{
+
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color:#161FF3;    
+    font-weight:bold;
+   }
+
+
+
+
+/* TRABAJOS */
+
+#trabajos{
+    background-color: #F2F2F2;
+    padding-top: 100px;
+    
+ 
+}
+
+
+.imagentrabajos{
+    display:block;
+    margin:auto;
+    width:100px;
+    height:100px;
+  
+    }
+
+#parrafotrabajo{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#3895EA;    
+    font-weight:bold;
+    padding-bottom: 150px;
+}
+
+div a img{
+    display:block; 
+    position:top;
+    margin:auto;
+    width:150px;
+    height:100px;
+    } 
+
+/* FOOTER */    
+
+#footer{
+    background-color: #1E2B38;
+    padding-top: 0%;
+    border-radius: 0% 0%;
+   }
+

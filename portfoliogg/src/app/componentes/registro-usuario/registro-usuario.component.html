@@ -1,0 +1,95 @@
+<div class="container-fluid" style="
+   background-image: url('./assets/Imagenes/ImagenesdelHeader/surface-rkr_jnaGzIk-unsplash.jpg');
+   background-size: cover; height:141vh;
+   border-radius: 30%;
+   border-style:groove;
+   background-repeat: no-repeat;
+   background-color: #FCF3CF;
+   background-position: center center;
+   position:absolute">
+  <div class="col-2">
+    <button type="button" class="btn btn-outline-secondary" routerLink="/iniciar-sesion">
+      ⇇
+    </button>
+  </div>
+  <div class="col-md-4 col-md-offset-4" id="loginregistro">
+    <br>
+    <br>
+    <section id="inner-wrapper" class="login">
+      <article>
+        <form #f="ngForm" [formGroup]="form" (ngSubmit)="nuevoRegistro()" novalidate id="formregistro">
+
+
+          <div class="form-group">
+            <div class="input-group, row">
+              <div class="d-flex justify-content-center text-center">
+                <h6 class="fs-2" id="titiniciarsesion">Registro
+                  <small class="text-muted d-flex justify-content-center">usuario</small>
+                </h6>
+              </div>
+              <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+              <label for="nombre" class="fs-5"></label>
+              <input type="text" class="form-control" formControlName="nombre" id="nombre" name="nombre"
+                placeholder="Nombre"
+                [ngClass]="{'is-invalid': Nombre?.errors && Nombre?.touched, 'is-valid':!Nombre?.errors && Nombre?.touched}"
+                [(ngModel)]="nombre" required>
+              <div *ngIf="Nombre?.errors && Nombre?.touched">
+                <div *ngIf="Nombre?.hasError('required')">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group, row">
+              <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+              <label for="nombreUsuario" class="fs-5"></label>
+              <input type="email" class="form-control" formControlName="nombreUsuario" id="nombreUsuario"
+                placeholder="Nombre de usuario" name="nombreUsuario"
+                [ngClass]="{'is-invalid': NombreUsuario?.errors && NombreUsuario?.touched, 'is-valid':!NombreUsuario?.errors && NombreUsuario?.touched}"
+                [(ngModel)]="nombreUsuario" required>
+              <div *ngIf="NombreUsuario?.errors && NombreUsuario?.touched">
+                <div *ngIf="NombreUsuario?.hasError('required')">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group, row">
+              <span class="input-group-addon"><i class="fa fa-envelope"> </i></span>
+              <label for="email" class="fs-5"></label>
+              <input type="email" class="form-control" formControlName="email" id="email" name="email"
+                placeholder="Email"
+                [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid':!Email?.errors && Email?.touched}"
+                [(ngModel)]="email" required>
+              <div *ngIf="Email?.errors && Email?.touched">
+                <div *ngIf="Email?.hasError('required')" class="text-danger">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group, row">
+              <span class="input-group-addon"><i class="fa fa-key"> </i></span>
+              <label for="password" class="fs-5"></label>
+              <input type="password" class="form-control" formControlName="password" id="password" name="password"
+                placeholder="Contraseña"
+                [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid':!Password?.errors && Password?.touched}"
+                [(ngModel)]="password" required />
+              <div *ngIf="Password?.errors && Password?.touched">
+                <div *ngIf="Password?.hasError('required')">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-secondary">Registrarse</button>
+            <div class="forgot">
+              <hr>
+              | <a routerLink="/iniciar-sesion">Ya tenés cuenta?</a>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+  </div>
+</div>

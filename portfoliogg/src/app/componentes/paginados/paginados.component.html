@@ -1,0 +1,49 @@
+<app-encabezadosinanim></app-encabezadosinanim>
+<div class="container-fluid pt-2">
+  <button type="button" class="btn btn-outline-secondary" routerLink="/paginauno">
+    <i class="bi bi-house"></i>
+  </button>
+  <div class="row">
+    <br>
+    <br>
+    <h1 data-aos="flip-left" data-aos-delay="1500" data-aos-duration="2000">Experiencia Laboral</h1>
+    <div class="text-center">
+      <button type="button" class="btn btn-secondary" routerLink="/trabcrear" type="button">
+        Agregar experiencia laboral
+      </button>
+      <a href="https://drive.google.com/file/d/1aaitsREZ0Vb3q30MCtP426IP6LGD-Mpd/view?usp=sharing"
+        class="btn btn-outline-secondary bt-lg" type="button" target="_blank">Ir al CV Completo</a>
+      <div class="text-center waviy">
+        <span class="text-secondary" style="--i:1">⇊</span>
+      </div>
+      <br>
+    </div>
+    <div class="container" id="containertrabajos">
+      <div *ngFor="let Paginados of paginados" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="row justify-content-center">
+          <div class="col-12 justify-content-center" id="divnombrexp">
+            <h2>{{Paginados.nombreExp}}</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 justify-content-center" id="divdesccripcion">
+            <p class="text-center"> {{Paginados.descripcionExp}} </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4 text-center">
+            <button class="btn btn-outline-secondary" routerLink="/editarexplab/{{Paginados.id}}">
+              <i class="bi bi-pencil-square"></i> Editar </button>
+            <button class="btn btn-outline-danger" (click)="borrarExpLab(Paginados.id)">
+              <i class="bi bi-x-square"></i> Borrar</button>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footersinanim></app-footersinanim>

@@ -1,0 +1,71 @@
+<app-encabezado></app-encabezado>
+<br>
+<div class="container" id="animacionacercade">
+  <div class="col-lg-12">
+    <img id="imagen-acercade" src="../assets/Imagenes/ImagenesdelHeader/FotoCV.jpg"
+      alt="imagen acerca de">
+    <h2>Acerca de mi</h2>
+    <p id="parrafo-acercade">Licenciada en Administración y Gestión de Instituciones de Educacion Superior.
+      Desarrolladora web fullstack (Argentina Programa). Diplomada en gestión académica,
+      producción de materiales didácticos en EaD. Experiencia profesional desarrollada en el
+      ámbito académico y
+      administrativo de la <span id="span-parrafo-acercade">Universidad Tecnológica Nacional y el Instituto Nacional
+        Superior del Profesorado Técnico. Contactame: gabriela.guanini@gmail.com</span>
+    </p>
+    <a></a>
+  </div>
+</div>
+
+<!-- CARROUSSEL Y LINKS A TRABAJOS -->
+
+<app-slider></app-slider>
+
+
+<!-- columna izquierda -->
+
+<div id="trabajos" class="container-fluid">
+  <h1>Experiencia Laboral</h1>
+  <div class="row">
+    <div class="col-12 col-lg-4 col-sm-12 text-center" data-aos="zoom-in-down" data-aos-duration="2000">
+      <i class="bi bi-link"></i>
+      <a routerLink="/paginados" fragment="h1-paginatrabajosdesarrollado"><img class="imagentrabajos"
+          src="../assets/Imagenes/Imagenes del body/ImgLogoUTN_bco.png" alt="ImgLogoUTN_bco"></a>
+      <p id="parrafotrabajo"><a href="https://utn.edu.ar/es/" target="_blank">UNIVERSIDAD
+          TECNOLÓGICA NACIONAL - RECTORADO</a></p>
+    </div>
+
+    <!-- columna central -->
+
+    <div class="col-12 col-lg-4 col-sm-12 text-center" data-aos="zoom-in-down" data-aos-duration="2000">
+      <i class="bi bi-link"></i>
+      <a routerLink="/paginados"><img class="imagentrabajos" src="../assets/Imagenes/Imagenes del body/Logo INSPT.png"
+          style="opacity:0.8;" alt="logo inspt"></a>
+      <p id="parrafotrabajo"><a href="http://www.inspt.utn.edu.ar/" target="_blank">INSTITUTO NACIONAL SUPERIOR DEL
+          PROFESORADO TECNICO</a></p>
+    </div>
+
+    <!-- columna derecha -->
+
+    <div class="col-12 col-lg-4 col-sm-12 text-center" data-aos="zoom-in-down" data-aos-duration="2000">
+      <i class="bi bi-link"></i>
+      <a routerLink="/paginados"><img class="imagentrabajos"
+          src="../assets/Imagenes/Imagenes del body/ImgLogoUTN_bco.png" alt="ImgLogoUTN_bco"></a>
+      <p id="parrafotrabajo"><a href="https://utn.edu.ar/es/" target="_blank">UNIVERSIDAD
+          TECNOLÓGICA NACIONAL - RECTORADO</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Habilidades -->
+
+<app-habilidades></app-habilidades>
+
+<!-- PROYECTOS -->
+
+<app-proyectos></app-proyectos>
+
+<!-- FOOTER -->
+
+<app-footer></app-footer>
