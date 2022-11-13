@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
 import { ProyectosService } from 'src/app/service/proyectos.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-nuevaeducacion',
@@ -15,10 +16,18 @@ export class NuevaeducacionComponent implements OnInit {
   descripcionEducacion!:string;
 
 
-  constructor(private eduServ:EducacionService, private router:Router) { }
+  constructor(private tokenService: TokenService, 
+              private eduServ:EducacionService, 
+              private router:Router) { }
+
+
 
   ngOnInit(): void {
+    if (this.tokenService.getToken() == null) {
+      this.router.navigate(['iniciar-sesion']);
+    }
   }
+  
 
   onCreate():void{
     const educacion = new Educacion(this.nombreEducacion, this.fechaEducacion, this.descripcionEducacion);

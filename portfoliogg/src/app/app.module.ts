@@ -29,6 +29,9 @@ import { ActualizarproyectosComponent } from './componentes/proyectos/actualizar
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NuevaeducacionComponent } from './componentes/educacion/nuevaeducacion/nuevaeducacion.component';
 import { EditareducacionComponent } from './componentes/educacion/editareducacion/editareducacion.component';
+import { HabilidadescrudComponent } from './componentes/habilidadescrud/habilidadescrud.component';
+import { NuevahabilidadComponent } from './componentes/habilidadescrud/nuevahabilidad/nuevahabilidad.component';
+import { EditarhabilidadComponent } from './componentes/habilidadescrud/editarhabilidad/editarhabilidad.component';
 
 
 
@@ -57,7 +60,10 @@ import { EditareducacionComponent } from './componentes/educacion/editareducacio
     ActualizarproyectosComponent,
     EducacionComponent,
     NuevaeducacionComponent,
-    EditareducacionComponent,  
+    EditareducacionComponent,
+    HabilidadescrudComponent,
+    NuevahabilidadComponent,
+    EditarhabilidadComponent,  
   ],
   imports: [
     BrowserModule,

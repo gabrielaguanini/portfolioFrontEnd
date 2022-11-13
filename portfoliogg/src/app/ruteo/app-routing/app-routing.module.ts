@@ -5,6 +5,9 @@ import { EditarexplabComponent } from 'src/app/componentes/editarexplab/editarex
 import { EditarlibvisComponent } from 'src/app/componentes/editarlibvis/editarlibvis.component';
 import { EditareducacionComponent } from 'src/app/componentes/educacion/editareducacion/editareducacion.component';
 import { NuevaeducacionComponent } from 'src/app/componentes/educacion/nuevaeducacion/nuevaeducacion.component';
+import { EditarhabilidadComponent } from 'src/app/componentes/habilidadescrud/editarhabilidad/editarhabilidad.component';
+import { HabilidadescrudComponent } from 'src/app/componentes/habilidadescrud/habilidadescrud.component';
+import { NuevahabilidadComponent } from 'src/app/componentes/habilidadescrud/nuevahabilidad/nuevahabilidad.component';
 import { IniciarSesionComponent } from 'src/app/componentes/iniciar-sesion/iniciar-sesion.component';
 import { LibrovisitasComponent } from 'src/app/componentes/librovisitas/librovisitas.component';
 import { MsjlibvisComponent } from 'src/app/componentes/msjlibvis/msjlibvis.component';
@@ -33,6 +36,8 @@ const routes: Routes = [
   { path: 'actualizarproyecto/:id', component: ActualizarproyectosComponent}, 
   { path: 'nuevaeducacion', component: NuevaeducacionComponent }, 
   { path: 'actualizareducacion/:id', component: EditareducacionComponent}, 
+  { path: 'nuevahabilidad', component: NuevahabilidadComponent}, 
+  { path: 'actualizarhabilidad/:id', component: EditarhabilidadComponent}, 
   { path: '', redirectTo: 'bienvenida', pathMatch: 'full' }
 ];
 

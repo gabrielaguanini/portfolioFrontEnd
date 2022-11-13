@@ -1,0 +1,35 @@
+<div class="container-fluid pt-2">
+    <br>
+    <br>
+    <div class="row">       
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-secondary" routerLink="/nuevahabilidad">
+            AGREGAR HABILIDAD ➳
+        </button>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div *ngFor="let Habilidades of habilidades">
+            <div class="row border border-3 justify-content-center">
+                <div class="col-4 justify-content-center" id="divnombrehab">
+                    <h2 id="idhabilidad">{{Habilidades.nombreHabilidad}}</h2>
+                </div>
+                <div class="col-4 justify-content-center" id="divdeshab">
+                    <p>{{Habilidades.descripcionHabilidad}}</p>
+                </div>
+                <div class="col-4" id="divboto">
+                    <button class="btn btn-outline-secondary" routerLink="/actualizarhabilidad/{{Habilidades.id}}">
+                        <i class="bi bi-pencil-square"></i> Editar</button>
+                    <button class="btn btn-outline-danger" (click)="borrarHabilidad(Habilidades.id)">
+                        <i class="bi bi-x-square"></i> Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>

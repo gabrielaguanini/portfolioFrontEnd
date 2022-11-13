@@ -19,14 +19,17 @@ export class EditareducacionComponent implements OnInit {
                private eduServ:EducacionService ) { }
 
   ngOnInit(): void {
-
+    
+   
     const id = this.activatedRouter.snapshot.params['id'];
     this.eduServ.actualizarPorId(id).subscribe(data => {
       this.educacion = data;
     }, err => {
       alert("No se modificó");
       this.router.navigate(['/paginauno']);
-    })
+    });
+    
+    
 
   }
 

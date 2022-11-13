@@ -1,0 +1,37 @@
+<app-encabezadosinanim></app-encabezadosinanim>
+<br>
+<br>
+<div class="container" *ngIf="habilidades"
+data-aos="zoom-out-right" data-aos-delay="200" data-aos-duration="2000">
+    <div class="col-6">
+        <button type="button" class="btn btn-outline-secondary" routerLink="/paginauno">
+            ⇇
+        </button>
+        <br>
+    </div>
+    <br>
+</div>
+<div class="container" data-aos="zoom-out-right" data-aos-delay="200" data-aos-duration="2000">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group, col-6">
+                    <label for="nombreHabilidad" class="fs-4">Nombre de la Habilidad </label>
+                    <input type="text" class="form-control" id="nombreHabilidad" name="nombreHabilidad" [(ngModel)]="habilidades.nombreHabilidad"
+                        required>
+                </div>
+                <div class="form-group, col-6">
+                    <label for="descripcionHabilidad" class="fs-4">Descripción</label>
+                    <textarea type="text" class="form-control" id="descripcionHabilidad" name="descripcionHabilidad"
+                        [(ngModel)]="habilidades.descripcionHabilidad" required>
+                    </textarea>
+                </div>
+                <br>
+                <button class="btn btn-outline-secondary">
+                    Enviar
+                </button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
