@@ -1,0 +1,37 @@
+<div class="container-fluid pt-2">
+     <div class="row">
+        <h1>Educación Formal y Otros</h1>
+    </div>
+    <button type="button" class="btn btn-outline-secondary" routerLink="/nuevaeducacion">
+        AGREGAR EDUCACIÓN ➳
+    </button>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div *ngFor="let Educacion of educacion">
+            <div class="row border border-3">
+                <div class="col-3 justify-content-center" id="divnombre">
+                    <h2 id="idtitedu">{{Educacion.nombreEducacion}}</h2>
+                </div>
+                <div class="col-3 justify-content-center" id="divfecha">
+                    <p id="fechaeduc">{{Educacion.fechaEducacion}}</p>
+                </div>
+                <div class="col-3 justify-content-center" id="divdescr">
+                    <p>{{Educacion.descripcionEducacion}}</p>
+                </div>
+                <div class="col-3" id="divboto">
+                    <button class="btn btn-outline-secondary" routerLink="/actualizareducacion/{{Educacion.id}}">
+                        <i class="bi bi-pencil-square"></i> Editar</button>
+                    <button class="btn btn-outline-danger" (click)="borrarEducacion(Educacion.id)">
+                        <i class="bi bi-x-square"></i> Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+</div>

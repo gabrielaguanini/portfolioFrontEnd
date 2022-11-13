@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BienvenidaComponent } from 'src/app/componentes/bienvenida/bienvenida.component';
 import { EditarexplabComponent } from 'src/app/componentes/editarexplab/editarexplab.component';
 import { EditarlibvisComponent } from 'src/app/componentes/editarlibvis/editarlibvis.component';
+import { EditareducacionComponent } from 'src/app/componentes/educacion/editareducacion/editareducacion.component';
+import { NuevaeducacionComponent } from 'src/app/componentes/educacion/nuevaeducacion/nuevaeducacion.component';
 import { IniciarSesionComponent } from 'src/app/componentes/iniciar-sesion/iniciar-sesion.component';
 import { LibrovisitasComponent } from 'src/app/componentes/librovisitas/librovisitas.component';
 import { MsjlibvisComponent } from 'src/app/componentes/msjlibvis/msjlibvis.component';
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'nuevousuario', component: RegistroUsuarioComponent }, 
   { path: 'nuevoproyecto', component: NuevoproyectoComponent }, 
   { path: 'actualizarproyecto/:id', component: ActualizarproyectosComponent}, 
+  { path: 'nuevaeducacion', component: NuevaeducacionComponent }, 
+  { path: 'actualizareducacion/:id', component: EditareducacionComponent}, 
   { path: '', redirectTo: 'bienvenida', pathMatch: 'full' }
 ];
 

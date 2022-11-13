@@ -1,4 +1,4 @@
-#divdes {
+#divdescr {
     max-width: 60vh;
     word-break: break-all;
     padding-top: 3vh;
@@ -11,12 +11,24 @@
     margin-right: 0%;
 }
 
+#divfecha{
+    text-align: center;
+    max-width: 20vh;
+    word-break: break-all;
+    margin-right: 0%;
+    padding-top: 3vh;
+
+}
+
 
 #divboto {
     margin-top: 2.5vh;
     padding-bottom: 2.5vh;
+    text-align: right;
+    margin-left: 15vh ;
 }
 
-*{
-    background-color: #F2F2F2
+#idtitedu{
+    font-size:medium;
 }
+

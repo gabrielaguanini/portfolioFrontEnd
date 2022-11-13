@@ -15,13 +15,13 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group, col-6">
-                    <label for="nombreExp" class="fs-4">Nombre del proyecto </label>
-                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreProyecto"
+                    <label for="nombreProyecto" class="fs-4">Nombre del proyecto </label>
+                    <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" [(ngModel)]="nombreProyecto"
                         required>
                 </div>
                 <div class="form-group, col-6">
-                    <label for="descripcionExp" class="fs-4">Breve Descripción</label>
-                    <textarea type="text" class="form-control" id="descripcionExp" name="descripcionExp"
+                    <label for="descripcionProyecto" class="fs-4">Breve Descripción</label>
+                    <textarea type="text" class="form-control" id="descripcionProyecto" name="descripcionProyecto"
                         [(ngModel)]="descripcionProyecto" required>
                     </textarea>
                 </div>
