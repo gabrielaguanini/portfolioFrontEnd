@@ -1,9 +1,22 @@
-#proyectos{
-background-color: #F2F2F2;}
-
-.qrProyectos{
-    height:23vh; 
-    width: 24vh; 
-    opacity: 0.8;
+#divmensaje {
+    max-width: 60vh;
+    word-break: break-all;
+    padding-top: 3vh;
 }
 
+#divnombre {
+    text-align: right;
+    max-width: 60vh;
+    word-break: break-all;
+    margin-right: 0%;
+}
+
+
+#divboto {
+    margin-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+*{
+    background-color: #F2F2F2
+}

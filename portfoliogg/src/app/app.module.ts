@@ -25,6 +25,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { NuevoproyectoComponent } from './componentes/proyectos/nuevoproyecto/nuevoproyecto.component';
+import { ActualizarproyectosComponent } from './componentes/proyectos/actualizarproyectos/actualizarproyectos.component';
 
 
 
@@ -49,7 +50,8 @@ import { NuevoproyectoComponent } from './componentes/proyectos/nuevoproyecto/nu
     NavbarbuttonComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    NuevoproyectoComponent,  
+    NuevoproyectoComponent,
+    ActualizarproyectosComponent,  
   ],
   imports: [
     BrowserModule,
