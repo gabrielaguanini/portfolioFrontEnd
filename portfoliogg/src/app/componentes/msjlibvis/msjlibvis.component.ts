@@ -48,7 +48,7 @@ export class MsjlibvisComponent implements OnInit {
 
     cerrarModal(){
       this.modalServ.$modal.emit(false);
-      location.reload();
+      
     }
 
     

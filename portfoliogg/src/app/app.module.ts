@@ -24,6 +24,7 @@ import { NavbarbuttonComponent } from './componentes/navbarbutton/navbarbutton.c
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { NuevoproyectoComponent } from './componentes/proyectos/nuevoproyecto/nuevoproyecto.component';
 
 
 
@@ -47,7 +48,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
     FootersinanimComponent,
     NavbarbuttonComponent,
     HabilidadesComponent,
-    ProyectosComponent,  
+    ProyectosComponent,
+    NuevoproyectoComponent,  
   ],
   imports: [
     BrowserModule,

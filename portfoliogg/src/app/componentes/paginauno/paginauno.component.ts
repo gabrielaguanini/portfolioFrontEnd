@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as AOS from 'aos';
+import { Proyectos } from 'src/app/model/proyectos';
+import { ProyectosService } from 'src/app/service/proyectos.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -9,9 +11,12 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./paginauno.component.css']
 })
 export class PaginaunoComponent implements OnInit {
+  proyectos:Proyectos[]= [];
 
 
-  constructor(private tokenService: TokenService, private router: Router) { }
+  constructor(private tokenService: TokenService,
+              private router: Router,
+              private proyServ:ProyectosService) { }
 
   ngOnInit(): void {
 
@@ -34,4 +39,24 @@ export class PaginaunoComponent implements OnInit {
 
     })
   }
+
+
+  cargarProyecto():void{
+    this.proyServ.lista().subscribe(data=> {this.proyectos = data})
+  }
+
+  borrarProyecto(id?: number){
+    if(id!=undefined){
+      this.proyServ.delete(id).subscribe(data=> {this.cargarProyecto();
+      }, err =>{
+        alert("No se elimino el proyecto");
+      }
+      )
+    }
+  }
+
+
+
+
+
 }

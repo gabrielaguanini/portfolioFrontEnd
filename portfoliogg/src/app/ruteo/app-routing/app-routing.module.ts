@@ -8,6 +8,8 @@ import { LibrovisitasComponent } from 'src/app/componentes/librovisitas/librovis
 import { MsjlibvisComponent } from 'src/app/componentes/msjlibvis/msjlibvis.component';
 import { PaginadosComponent } from 'src/app/componentes/paginados/paginados.component';
 import { PaginaunoComponent } from 'src/app/componentes/paginauno/paginauno.component';
+import { NuevoproyectoComponent } from 'src/app/componentes/proyectos/nuevoproyecto/nuevoproyecto.component';
+import { ProyectosComponent } from 'src/app/componentes/proyectos/proyectos.component';
 import { RegistroUsuarioComponent } from 'src/app/componentes/registro-usuario/registro-usuario.component';
 import { TrabcrearComponent } from 'src/app/componentes/trabcrear/trabcrear.component';
 import { GuardGuard } from 'src/app/service/guard.guard';
@@ -24,6 +26,7 @@ const routes: Routes = [
   { path: 'editarexplab/:id', component:EditarexplabComponent, canActivate:[GuardGuard] },
   { path: 'trabcrear', component: TrabcrearComponent, canActivate:[GuardGuard] }, 
   { path: 'nuevousuario', component: RegistroUsuarioComponent }, 
+  { path: 'nuevoproyecto', component: NuevoproyectoComponent }, 
   { path: '', redirectTo: 'bienvenida', pathMatch: 'full' }
 ];
 
