@@ -11,17 +11,17 @@
     </div>
     <div class="container">
         <div *ngFor="let Educacion of educacion">
-            <div class="row border border-3">
-                <div class="col-3 justify-content-center" id="divnombre">
-                    <h2 id="idtitedu">{{Educacion.nombreEducacion}}</h2>
+            <div class="row border border-3 p-3">
+                <div class="col-12 col-lg-3 col-sm-6 text-center" id="divnombre">
+                    <h2 class="p-2" id="idtitedu">{{Educacion.nombreEducacion}}</h2>
                 </div>
-                <div class="col-3 justify-content-center" id="divfecha">
-                    <p id="fechaeduc">{{Educacion.fechaEducacion}}</p>
+                <div class="col-12 col-lg-3 col-sm-6 text-center" id="divfecha">
+                    <em><h6 class="p-3" id="fechaeduc">{{Educacion.fechaEducacion}}</h6></em>
                 </div>
-                <div class="col-3 justify-content-center" id="divdescr">
-                    <p>{{Educacion.descripcionEducacion}}</p>
+                <div class="col-12 col-lg-3 col-sm-6 text-center fst-italic" id="divdescr">
+                    <h3 id="deseducac" class="text-secondary text-capitalize p-3">{{Educacion.descripcionEducacion}}</h3>
                 </div>
-                <div class="col-3" id="divboto">
+                <div class="col-12 col-lg-3 col-sm-6 text-center" id="divboto">
                     <button class="btn btn-outline-secondary" routerLink="/actualizareducacion/{{Educacion.id}}">
                         <i class="bi bi-pencil-square"></i> Editar</button>
                     <button class="btn btn-outline-danger" (click)="borrarEducacion(Educacion.id)">

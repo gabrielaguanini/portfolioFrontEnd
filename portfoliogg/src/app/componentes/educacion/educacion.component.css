@@ -1,34 +1,16 @@
-#divdescr {
-    max-width: 60vh;
-    word-break: break-all;
-    padding-top: 3vh;
+#divdescr{
+    font-size: small;
 }
 
-#divnombre {
-    text-align: right;
-    max-width: 60vh;
-    word-break: break-all;
-    margin-right: 0%;
-}
-
-#divfecha{
-    text-align: center;
-    max-width: 20vh;
-    word-break: break-all;
-    margin-right: 0%;
-    padding-top: 3vh;
-
-}
-
-
-#divboto {
-    margin-top: 2.5vh;
-    padding-bottom: 2.5vh;
-    text-align: right;
-    margin-left: 15vh ;
-}
-
-#idtitedu{
+#divnombre{
     font-size:medium;
 }
 
+#idtitedu{
+font-size:medium;
+}
+
+#deseducac{
+    font-size:medium;
+
+}

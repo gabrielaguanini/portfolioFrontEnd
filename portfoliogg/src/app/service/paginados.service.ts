@@ -8,7 +8,7 @@ import { Paginados } from '../model/paginados';
 })
 export class PaginadosService {
 
-  expURL='http://localhost:8080/explaboral/';
+  expURL='https://portfoliogabg.herokuapp.com/explaboral/';
 
   constructor(private httpClient:HttpClient) { }
 

@@ -9,7 +9,7 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/authentication/';
+  authURL = 'https://portfoliogabg.herokuapp.com/authentication/';
   
   constructor(private httpClient: HttpClient) { 
     console.log('Servicio Autenticacion esta corriendo');    

@@ -32,6 +32,7 @@ import { EditareducacionComponent } from './componentes/educacion/editareducacio
 import { HabilidadescrudComponent } from './componentes/habilidadescrud/habilidadescrud.component';
 import { NuevahabilidadComponent } from './componentes/habilidadescrud/nuevahabilidad/nuevahabilidad.component';
 import { EditarhabilidadComponent } from './componentes/habilidadescrud/editarhabilidad/editarhabilidad.component';
+import { CodigosqrComponent } from './componentes/codigosqr/codigosqr.component';
 
 
 
@@ -63,7 +64,8 @@ import { EditarhabilidadComponent } from './componentes/habilidadescrud/editarha
     EditareducacionComponent,
     HabilidadescrudComponent,
     NuevahabilidadComponent,
-    EditarhabilidadComponent,  
+    EditarhabilidadComponent,
+    CodigosqrComponent,  
   ],
   imports: [
     BrowserModule,

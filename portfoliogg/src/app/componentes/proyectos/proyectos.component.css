@@ -1,14 +1,18 @@
 #divdes {
     max-width: 60vh;
-    word-break: break-all;
+    word-break: normal;
     padding-top: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-align:justify;
+    
 }
 
 #divnombre {
-    text-align: right;
+    text-align:center;
     max-width: 60vh;
-    word-break: break-all;
+    word-break: normal;
     margin-right: 0%;
+    padding-top: 3vh;
 }
 
 
@@ -17,6 +21,10 @@
     padding-bottom: 2.5vh;
 }
 
-*{
-    background-color: #F2F2F2
+#iddescriproy{
+    font-size: small;
+}
+
+#idpr{
+    font-size:medium;
 }

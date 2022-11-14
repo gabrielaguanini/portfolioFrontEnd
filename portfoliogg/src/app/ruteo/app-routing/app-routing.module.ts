@@ -31,13 +31,13 @@ const routes: Routes = [
   { path: 'editarlib/:id', component: EditarlibvisComponent, canActivate:[GuardGuard] },
   { path: 'editarexplab/:id', component:EditarexplabComponent, canActivate:[GuardGuard] },
   { path: 'trabcrear', component: TrabcrearComponent, canActivate:[GuardGuard] }, 
-  { path: 'nuevousuario', component: RegistroUsuarioComponent }, 
-  { path: 'nuevoproyecto', component: NuevoproyectoComponent }, 
-  { path: 'actualizarproyecto/:id', component: ActualizarproyectosComponent}, 
-  { path: 'nuevaeducacion', component: NuevaeducacionComponent }, 
-  { path: 'actualizareducacion/:id', component: EditareducacionComponent}, 
-  { path: 'nuevahabilidad', component: NuevahabilidadComponent}, 
-  { path: 'actualizarhabilidad/:id', component: EditarhabilidadComponent}, 
+  { path: 'nuevousuario', component: RegistroUsuarioComponent}, 
+  { path: 'nuevoproyecto', component: NuevoproyectoComponent, canActivate:[GuardGuard] }, 
+  { path: 'actualizarproyecto/:id', component: ActualizarproyectosComponent, canActivate:[GuardGuard]}, 
+  { path: 'nuevaeducacion', component: NuevaeducacionComponent, canActivate:[GuardGuard] }, 
+  { path: 'actualizareducacion/:id', component: EditareducacionComponent, canActivate:[GuardGuard]}, 
+  { path: 'nuevahabilidad', component: NuevahabilidadComponent, canActivate:[GuardGuard]}, 
+  { path: 'actualizarhabilidad/:id', component: EditarhabilidadComponent, canActivate:[GuardGuard]}, 
   { path: '', redirectTo: 'bienvenida', pathMatch: 'full' }
 ];
 

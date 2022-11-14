@@ -26,6 +26,17 @@
 }
 
 
+
+#divnombrexp{
+  text-align:center;
+}
+
+#divdesccripcion{
+  text-align:justify;
+}
+
+
+
 /* FLECHAS ABAJO */
 
 .waviy {
@@ -63,4 +74,5 @@
 #containertrabajos {
   padding-left: 10vh;
   padding-right: 10vh;
+ 
 }
