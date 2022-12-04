@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class NuevoUsuarioService {
-  nuserURL = 'https://portfoliogabg.herokuapp.com/authentication/';
+  nuserURL = 'https://backcloneportfolio-production.up.railway.app/authentication/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://portfoliogabg.herokuapp.com/educacion/';
+  URL = 'https://backcloneportfolio-production.up.railway.app/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

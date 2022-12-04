@@ -8,7 +8,7 @@ import { Librovisitas } from '../model/librovisitas';
 })
 export class LibrovisitasService {
 
-  lvURL = 'https://portfoliogabg.herokuapp.com/librovisitas/';
+  lvURL = 'https://backcloneportfolio-production.up.railway.app/librovisitas/';
 
   constructor(private httpClient: HttpClient) { }
 

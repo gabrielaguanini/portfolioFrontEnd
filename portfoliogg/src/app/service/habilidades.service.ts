@@ -9,7 +9,7 @@ import { Habilidades } from '../model/habilidades';
 })
 export class HabilidadesService {
 
-  URL = 'https://portfoliogabg.herokuapp.com/habilidades/';
+  URL = 'https://backcloneportfolio-production.up.railway.app/habilidades/';
 
   constructor(private httpClient:HttpClient) { }
 

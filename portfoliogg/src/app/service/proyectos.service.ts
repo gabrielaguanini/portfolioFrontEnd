@@ -8,7 +8,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  URL = 'https://portfoliogabg.herokuapp.com/proyectos/';
+  URL = 'https://backcloneportfolio-production.up.railway.app/proyectos/';
 
    
 

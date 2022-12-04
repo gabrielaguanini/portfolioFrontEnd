@@ -9,7 +9,8 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://portfoliogabg.herokuapp.com/authentication/';
+  authURL = 'https://backcloneportfolio-production.up.railway.app/authentication/';
+  
   
   constructor(private httpClient: HttpClient) { 
     console.log('Servicio Autenticacion esta corriendo');    
