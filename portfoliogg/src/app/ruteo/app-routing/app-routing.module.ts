@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'paginados', component: PaginadosComponent, canActivate:[GuardGuard] },
   //{ path: 'librovisitas', component: LibrovisitasComponent, canActivate:[GuardGuard] },
   //{ path: 'editarlib/:id', component: EditarlibvisComponent, canActivate:[GuardGuard] },
-  // path: 'editarexplab/:id', component:EditarexplabComponent, canActivate:[GuardGuard] },
+  { path: 'editarexplab/:id', component:EditarexplabComponent, canActivate:[GuardGuard] },
   { path: 'trabcrear', component: TrabcrearComponent, canActivate:[GuardGuard] }, 
   { path: 'nuevousuario', component: RegistroUsuarioComponent}, 
   { path: 'nuevoproyecto', component: NuevoproyectoComponent, canActivate:[GuardGuard] }, 
