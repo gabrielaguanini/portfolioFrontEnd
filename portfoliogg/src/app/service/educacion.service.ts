@@ -9,7 +9,8 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://backcloneportfolio-production.up.railway.app/educacion/';
+  //URL = 'https://backcloneportfolio-production.up.railway.app/educacion/';
+  URL = 'https://portfoliobackend-production-0d84.up.railway.app/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 
