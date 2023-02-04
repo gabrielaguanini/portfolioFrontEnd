@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class NuevoUsuarioService {
   //nuserURL = 'https://backcloneportfolio-production.up.railway.app/authentication/';
-  nuserURL = 'https://portfoliobackend-production-0d84.up.railway.app/authentication/';
+  nuserURL = 'https://backendportfoliogg.onrender.com/authentication/';
 
   constructor(private httpClient: HttpClient) { }
 
