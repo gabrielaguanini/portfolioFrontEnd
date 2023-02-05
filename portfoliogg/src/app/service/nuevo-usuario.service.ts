@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class NuevoUsuarioService {
-  nuserURL = 'portfoliobackend-production-fc6a.up.railway.app/authentication/';
+  nuserURL = 'https://portfoliobackend-production-fc6a.up.railway.app/authentication/';
   //nuserURL = 'https://backendportfoliogg.onrender.com/authentication/';
 
   constructor(private httpClient: HttpClient) { }

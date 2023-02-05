@@ -8,7 +8,7 @@ import { Paginados } from '../model/paginados';
 })
 export class PaginadosService {
 
-  expURL='portfoliobackend-production-fc6a.up.railway.app/explaboral/';
+  expURL='https://portfoliobackend-production-fc6a.up.railway.app/explaboral/';
   //expURL='https://backendportfoliogg.onrender.com/explaboral/';
 
   constructor(private httpClient:HttpClient) { }

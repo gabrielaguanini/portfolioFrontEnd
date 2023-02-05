@@ -9,7 +9,7 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'portfoliobackend-production-fc6a.up.railway.app/authentication/';
+  authURL = 'https://portfoliobackend-production-fc6a.up.railway.app/authentication/';
   //authURL = 'https://backendportfoliogg.onrender.com/authentication/';
   
   constructor(private httpClient: HttpClient) { 

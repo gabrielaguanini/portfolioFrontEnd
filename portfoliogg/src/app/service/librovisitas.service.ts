@@ -8,7 +8,7 @@ import { Librovisitas } from '../model/librovisitas';
 })
 export class LibrovisitasService {
 
-    lvURL = 'portfoliobackend-production-fc6a.up.railway.app/librovisitas/';
+    lvURL = 'https://portfoliobackend-production-fc6a.up.railway.app/librovisitas/';
     //lvURL = 'https://backendportfoliogg.onrender.com/librovisitas/';
 
   constructor(private httpClient: HttpClient) { }
