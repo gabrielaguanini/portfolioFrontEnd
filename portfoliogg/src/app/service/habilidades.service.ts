@@ -9,8 +9,8 @@ import { Habilidades } from '../model/habilidades';
 })
 export class HabilidadesService {
 
-  //URL = 'https://backcloneportfolio-production.up.railway.app/habilidades/';
-  URL = 'https://backendportfoliogg.onrender.com/habilidades/';
+  URL = 'portfoliobackend-production-fc6a.up.railway.app/habilidades/';
+  //URL = 'https://backendportfoliogg.onrender.com/habilidades/';
 
   constructor(private httpClient:HttpClient) { }
 

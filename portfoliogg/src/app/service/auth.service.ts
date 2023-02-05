@@ -9,8 +9,8 @@ import { LoginUsuario } from '../model/login-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  //authURL = 'https://backcloneportfolio-production.up.railway.app/authentication/';
-  authURL = 'https://backendportfoliogg.onrender.com/authentication/';
+  authURL = 'portfoliobackend-production-fc6a.up.railway.app/authentication/';
+  //authURL = 'https://backendportfoliogg.onrender.com/authentication/';
   
   constructor(private httpClient: HttpClient) { 
     console.log('Servicio Autenticacion esta corriendo');    

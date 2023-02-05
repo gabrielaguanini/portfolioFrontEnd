@@ -9,8 +9,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class NuevoUsuarioService {
-  //nuserURL = 'https://backcloneportfolio-production.up.railway.app/authentication/';
-  nuserURL = 'https://backendportfoliogg.onrender.com/authentication/';
+  nuserURL = 'portfoliobackend-production-fc6a.up.railway.app/authentication/';
+  //nuserURL = 'https://backendportfoliogg.onrender.com/authentication/';
 
   constructor(private httpClient: HttpClient) { }
 
