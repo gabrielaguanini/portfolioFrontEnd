@@ -1,44 +1,4 @@
-/* LOGOS NAV */
-#imagenargprog1 {
-  width: 25vh;
-  height: 9vh;
-  margin-top: 2vh;
-  margin-left: 1vh;
-}
 
-#imagenargprog2 {
-  width: 10vh;
-  height: 12vh;
-  margin-left: 1vh;
-}
-
-#imagenargprog3 {
-  width: 33vh;
-  height: 12vh;
-  margin-left: 1vh;
-}
-
-@media handheld,
-only screen and (max-width: 470px) {
-  #imagenargprog1 {
-    width: 12vh;
-    height: 3vh;
-    margin-left: -1vh;
-  }
-
-  #imagenargprog2 {
-    width: 6vh;
-    height: 6vh;
-    margin-left: -1vh;
-  }
-
-  #imagenargprog3 {
-    width: 18vh;
-    height: 6vh;
-    margin-left: -1vh;
-
-  }
-}
 
 /* BOTON REDES */
 

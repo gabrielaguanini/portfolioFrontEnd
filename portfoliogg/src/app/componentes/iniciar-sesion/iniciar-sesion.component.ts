@@ -39,11 +39,6 @@ export class IniciarSesionComponent implements OnInit {
 
   ngOnInit(): void {
 
-    if (this.tokenService.getToken()) {
-      this.isLogged = true;
-      this.isLogginFail = false;
-      this.roles = this.tokenService.getAuthorities();
-    };
 
     AOS.init();
     
@@ -97,6 +92,8 @@ mostrarInput():any{
   document.getElementById('password')!.style.color='black';
 
  } 
+
+
 }
 
 

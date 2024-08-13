@@ -12,9 +12,7 @@ export class HabilidadesComponent implements OnInit {
   constructor(private tokenService: TokenService, private router: Router) { }
 
   ngOnInit(): void {
-    if (this.tokenService.getToken() == null) {
-      this.router.navigate(['iniciar-sesion']);
-       }
+  
   }
 
 }

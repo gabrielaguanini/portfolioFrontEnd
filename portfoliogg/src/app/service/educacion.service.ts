@@ -9,8 +9,9 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL = 'https://portfoliobackend-production-fc6a.up.railway.app/educacion/';
-  //URL = 'https://backendportfoliogg.onrender.com/educacion/';
+ 
+  URL = 'https://backendportfoliogg.onrender.com/educacion/';
+  //URL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

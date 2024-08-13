@@ -12,6 +12,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class HabilidadescrudComponent implements OnInit {
 
   habilidades:Habilidades[]= [];
+  msjEsperandoLista = "";
 
   constructor(private tokenService: TokenService, 
               private router: Router, 
@@ -21,13 +22,30 @@ export class HabilidadescrudComponent implements OnInit {
 
     this.cargarhabilidad()
 
-    if (this.tokenService.getToken() == null) {
-      this.router.navigate(['iniciar-sesion']);
-       }
+    
   }
 
-  cargarhabilidad():void{
-    this.habServ.lista().subscribe(data=> {this.habilidades = data})
+
+
+ 
+  cargarhabilidad(): void {
+      // Mostrar mensaje de espera antes de hacer la llamada
+      this.msjEsperandoLista = "Esperando datos del servidor. Por favor espera para visualizarlos.";
+  
+      // Hacer la solicitud al servidor sin depender
+      this.habServ.lista().subscribe(
+          data => {
+              // Actualizar los datos recibidos
+              this.habilidades = data;
+  
+              // Ocultar el mensaje de espera una vez que los datos se han cargado
+              this.msjEsperandoLista = "";
+          },
+          error => {
+              // En caso de error, puedes mostrar un mensaje alternativo
+              this.msjEsperandoLista = "Ocurrió un error al cargar los datos. Por favor refresque la pagina.";
+          }
+      );
   }
 
 

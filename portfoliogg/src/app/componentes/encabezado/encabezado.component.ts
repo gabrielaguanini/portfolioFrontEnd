@@ -18,9 +18,7 @@ botonAbrir!:boolean;
 
   ngOnInit(): void {
      
-    if(this.tokenService.getToken()==null){
-      this.router.navigate(['iniciar-sesion']);
-    };
+
 
     AOS.init();
 

@@ -1,8 +1,9 @@
 <div class="container-fluid pt-2">
     <br>
-    <br>
-    <div class="row">       
-    </div>
+
+    <div class="row">
+        <h1>Habilidades</h1>
+    </div>     
     <div>
         <button type="button" class="btn btn-outline-secondary" routerLink="/nuevahabilidad">
             AGREGAR HABILIDAD ➳
@@ -12,6 +13,7 @@
         <br>
     </div>
     <div class="container">
+        <p class="text-center text-secondary">{{msjEsperandoLista}}</p>
         <div *ngFor="let Habilidades of habilidades">
             <div class="row border border-3 justify-content-center">
                 <div class="col-4 justify-content-center" id="divnombrehab">

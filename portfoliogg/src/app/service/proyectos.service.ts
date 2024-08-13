@@ -8,8 +8,9 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
 
-  URL = 'https://portfoliobackend-production-fc6a.up.railway.app/proyectos/';
-  //URL = 'https://backendportfoliogg.onrender.com/proyectos/';
+
+  URL = 'https://backendportfoliogg.onrender.com/proyectos/';
+ // URL = 'http://localhost:8080/proyectos/'
 
    
 

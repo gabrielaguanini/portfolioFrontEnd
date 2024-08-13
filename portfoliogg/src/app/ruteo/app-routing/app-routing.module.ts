@@ -24,9 +24,9 @@ import { GuardGuard } from 'src/app/service/guard.guard';
 const routes: Routes = [
 
   { path: 'bienvenida', component: BienvenidaComponent }, 
-  { path: 'paginauno', component: PaginaunoComponent, canActivate:[GuardGuard]},
+  { path: 'paginauno', component: PaginaunoComponent},
   { path: 'iniciar-sesion', component: IniciarSesionComponent },
-  { path: 'paginados', component: PaginadosComponent, canActivate:[GuardGuard] },
+  { path: 'paginados', component: PaginadosComponent },
   //{ path: 'librovisitas', component: LibrovisitasComponent, canActivate:[GuardGuard] },
   //{ path: 'editarlib/:id', component: EditarlibvisComponent, canActivate:[GuardGuard] },
   { path: 'editarexplab/:id', component:EditarexplabComponent, canActivate:[GuardGuard] },

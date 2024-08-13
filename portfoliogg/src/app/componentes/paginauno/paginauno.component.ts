@@ -22,9 +22,7 @@ export class PaginaunoComponent implements OnInit {
 
     this.animacion_acercade();
 
-    if (this.tokenService.getToken() == null) {
-      this.router.navigate(['iniciar-sesion']);
-    }
+  
 
     AOS.init();
   }
